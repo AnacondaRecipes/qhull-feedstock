@@ -51,7 +51,7 @@ test:
     - rbox 1000 D3 | qhull C-1e-4 FO Ts
 
 about:
-  home: https://www.qhull.org/
+  home: http://www.qhull.org/
   license: Qhull
   license_family: Other
   license_file: COPYING.txt
@@ -63,7 +63,7 @@ about:
     implements the Quickhull algorithm for computing the convex hull. It handles roundoff
     errors from floating point arithmetic. It computes volumes, surface areas, and
     approximations to the convex hull.
-  doc_url: https://www.qhull.org/html
+  doc_url: http://www.qhull.org/html
   dev_url: https://github.com/qhull/qhull
 
 extra:
