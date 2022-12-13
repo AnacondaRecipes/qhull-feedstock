@@ -24,7 +24,9 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - ninja
-    - make  # [unix]
+    - make      # [unix]
+    - patch     # [not win]
+    - m2-patch  # [win]
   host:
   run:
 
@@ -51,8 +53,16 @@ test:
 about:
   home: http://www.qhull.org/
   license: Qhull
+  license_family: Other
   license_file: COPYING.txt
   summary: Qhull computes the convex hull
+  description: |
+    Qhull computes the convex hull, Delaunay triangulation, Voronoi diagram, halfspace
+    intersection about a point, furthest-site Delaunay triangulation, and furthest-site
+    Voronoi diagram. The source code runs in 2-d, 3-d, 4-d, and higher dimensions. Qhull
+    implements the Quickhull algorithm for computing the convex hull. It handles roundoff
+    errors from floating point arithmetic. It computes volumes, surface areas, and
+    approximations to the convex hull.
   doc_url: http://www.qhull.org/html
   dev_url: https://github.com/qhull/qhull
 
